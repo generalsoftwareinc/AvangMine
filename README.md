@@ -1,5 +1,8 @@
 <p align="center">
-  <a href="https://generalsoftwareinc.com/" target="blank"><img src="https://generalsoftwareinc.com/favicon.svg" alt="GSI"/></a>
+  <a href="https://generalsoftwareinc.com/" target="blank"><img src="https://generalsoftwareinc.com/favicon.svg" alt="GSI"/>
+  </br>
+  Innovative Software Development
+  </a>
 </p>
 
 # AvangMine
@@ -11,7 +14,9 @@ AvangMine, a ground-breaking companion for Redmine users, empowers you with real
  - 🏁 Kanban Board: Visualize your workflow with a Kanban board that showcases tasks of the selected project and their current statuses.
  - 📘 Detailed User Manual: Navigate AvangMine with ease using our comprehensive user manual designed to guide you through all of the app's features.
  - 🌓 Dark/Light Mode: Choose what's easy on your eyes with our dark/light mode feature.
-
+ 
+AvangMine is your opportunity to revolutionize the way you manage your Redmine projects, boosting your productivity and taking your project management to new heights.
+Dare to experience the AvangMine difference today!
 ## Install
 Download the code or clone the repository.
 
