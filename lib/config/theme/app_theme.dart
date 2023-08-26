@@ -9,7 +9,8 @@ class AppTheme {
         useMaterial3: true,
         colorSchemeSeed: indigo,
         brightness: isDarkmode ? Brightness.dark : Brightness.light,
-        listTileTheme:  ListTileThemeData(iconColor: isDarkmode ?indigo: Colors.black),
+        listTileTheme:
+            ListTileThemeData(iconColor: isDarkmode ? indigo : Colors.black),
         visualDensity: VisualDensity.adaptivePlatformDensity,
       );
 }

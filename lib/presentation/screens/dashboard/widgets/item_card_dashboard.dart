@@ -49,7 +49,7 @@ class CardDashboardWidget extends StatelessWidget {
                 size: 40,
               ),
               const SizedBox(width: 8),
-              if (counter != '?') ...{
+              if (counter != '?' && double.tryParse(counter) != null) ...{
                 Flexible(
                     child: CounterWidget(
                   count: double.parse(counter),
