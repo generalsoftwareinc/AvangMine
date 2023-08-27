@@ -92,7 +92,7 @@ class _FormLoginState extends ConsumerState<FormLogin> {
               prefixIcon: const Icon(TablerIcons.server),
               keyboardType: TextInputType.url,
               validator: (value) =>
-                  Validators.url(value!) ? null : 'Invalid server',
+                  Validators.url(value!.trim()) ? null : 'Invalid server',
             ),
             const SizedBox(height: 16),
             MyInputText(
@@ -101,8 +101,9 @@ class _FormLoginState extends ConsumerState<FormLogin> {
               prefixIcon: const Icon(TablerIcons.user),
               suffixIcon: ClearButton(controller: controllerUser),
               keyboardType: TextInputType.name,
-              validator: (value) =>
-                  Validators.userName(value!) ? null : 'Invalid username',
+              validator: (value) => Validators.userName(value!.trim())
+                  ? null
+                  : 'Invalid username',
             ),
             const SizedBox(height: 16),
             Consumer(builder: (context, ref, child) {
@@ -116,8 +117,9 @@ class _FormLoginState extends ConsumerState<FormLogin> {
                 autocorrect: false,
                 prefixIcon: const Icon(TablerIcons.lock),
                 keyboardType: TextInputType.text,
-                validator: (value) =>
-                    Validators.password(value!) ? null : 'Invalid Password',
+                validator: (value) => Validators.password(value!.trim())
+                    ? null
+                    : 'Invalid Password',
                 suffixIcon: IconButton(
                     icon: Icon(
                         hidePassword ? TablerIcons.eye : TablerIcons.eye_off),
