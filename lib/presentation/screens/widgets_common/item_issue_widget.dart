@@ -1,9 +1,9 @@
-import 'package:avangmine_riverpod/config/config.dart';
-import 'package:avangmine_riverpod/domain/domain.dart';
-import 'package:avangmine_riverpod/presentation/providers/providers.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:tabler_icons/tabler_icons.dart';
+import 'package:avangmine_riverpod/presentation/providers/providers.dart';
+import 'package:avangmine_riverpod/config/config.dart';
+import 'package:avangmine_riverpod/domain/domain.dart';
 // import 'package:timeago/timeago.dart' as timeago;
 
 class ItemIssueWidget extends ConsumerWidget {

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'transition_bar_home.dart';
-import 'transition_rail_home.dart';
+import 'widgets_home.dart';
 
 class NavigationTransition extends StatefulWidget {
   const NavigationTransition(

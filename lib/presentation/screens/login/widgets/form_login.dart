@@ -1,12 +1,12 @@
-import 'package:avangmine_riverpod/config/config.dart';
-import 'package:avangmine_riverpod/presentation/providers/login_providers.dart';
-import 'package:avangmine_riverpod/presentation/screens/login/widgets/error_login.dart';
-import 'package:avangmine_riverpod/presentation/screens/widgets_common/widgets_common.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:tabler_icons/tabler_icons.dart';
+import 'package:avangmine_riverpod/config/config.dart';
+import 'package:avangmine_riverpod/presentation/screens/login/widgets/error_login.dart';
+import 'package:avangmine_riverpod/presentation/screens/widgets_common/widgets_common.dart';
+import 'package:avangmine_riverpod/presentation/providers/login_providers.dart';
 
 class FormLogin extends StatefulHookConsumerWidget {
   const FormLogin({super.key});
@@ -41,7 +41,7 @@ class _FormLoginState extends ConsumerState<FormLogin> {
     FocusScope.of(context).unfocus();
     if (isOK) {
       ref.read(formProvider.notifier).change(controllerServer.text.trim(),
-          controllerUser.text.trim(), controllerPass.text.trim());
+          controllerUser.text.trim(), controllerPass.text);
       await ref.read(loginNotifierProvider.notifier).auth();
       if (ref.read(loginNotifierProvider).isAuth!) {
         ref.read(appRouterRefProvider).pushReplacement('/home');
@@ -117,9 +117,8 @@ class _FormLoginState extends ConsumerState<FormLogin> {
                 autocorrect: false,
                 prefixIcon: const Icon(TablerIcons.lock),
                 keyboardType: TextInputType.text,
-                validator: (value) => Validators.password(value!.trim())
-                    ? null
-                    : 'Invalid Password',
+                validator: (value) =>
+                    Validators.password(value!) ? null : 'Invalid Password',
                 suffixIcon: IconButton(
                     icon: Icon(
                         hidePassword ? TablerIcons.eye : TablerIcons.eye_off),

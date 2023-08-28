@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:avangmine_riverpod/presentation/screens/widgets_common/widgets_common.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:avangmine_riverpod/presentation/screens/widgets_common/widgets_common.dart';
 import 'widgets/widget_logins.dart';
 
 class LoginScreen extends ConsumerWidget {

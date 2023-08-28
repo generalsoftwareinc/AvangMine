@@ -1,8 +1,8 @@
-import 'package:avangmine_riverpod/config/config.dart';
-import 'package:avangmine_riverpod/presentation/providers/settings_providers.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:tabler_icons/tabler_icons.dart';
+import 'package:avangmine_riverpod/config/config.dart';
+import 'package:avangmine_riverpod/presentation/providers/providers.dart';
 import 'package:avangmine_riverpod/presentation/screens/widgets_common/widgets_common.dart';
 
 class LogoutSettingsWidget extends StatefulHookConsumerWidget {

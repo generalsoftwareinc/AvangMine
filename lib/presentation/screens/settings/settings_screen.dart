@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:avangmine_riverpod/config/config.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:avangmine_riverpod/config/config.dart';
 import 'package:avangmine_riverpod/presentation/screens/settings/widgets/widgets_settings.dart';
 
 class SettingsScreen extends StatefulHookConsumerWidget {
